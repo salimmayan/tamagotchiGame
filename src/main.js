@@ -1,9 +1,12 @@
 import $ from 'jquery';
 import './style.css';
-import '../src/Tamagotchi.js';
+import {Tamagotchi} from '../src/Tamagotchi.js';
 
 $(document).ready(function() {
 
-  
+  let tamagotchi2 =  new Tamagotchi("Luke");
+  console.log(`Inside Main ${tamagotchi2}`);
+
+
 
 });
