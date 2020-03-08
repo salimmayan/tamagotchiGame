@@ -2,7 +2,7 @@ export class Tamagotchi {
     constructor(name) {
         this.name = name;
         this.foodLevel = 30;
-        setInterval(() => {
+        this.timer = setInterval(() => {
             this.consumeFood();
             //console.log(`Food level is ${this.foodLevel}`);
         }, 1000); 
@@ -18,5 +18,10 @@ export class Tamagotchi {
         console.log(`New food level is ${this.foodLevel}`); 
     }
 
+
+    die() {
+        clearInterval(this.timer);
+       // console.log(`New food level is ${this.foodLevel}`); 
+    }
 
 }
