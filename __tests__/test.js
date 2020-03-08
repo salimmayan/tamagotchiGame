@@ -33,5 +33,14 @@ describe('test', () => {
 		expect(tamagotchi.foodLevel).toEqual(21);
 	});
 
+	test('should correctly call Tamagotchi.feed Property', () => {
+
+		let expected = "Austin";
+		let tamagotchi = new Tamagotchi("Austin");
+		expect(tamagotchi.foodLevel).toEqual(30);
+		tamagotchi.feed();
+		expect(tamagotchi.foodLevel).toBeGreaterThan(30);
+	});
+
 
 });

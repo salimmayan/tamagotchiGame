@@ -13,5 +13,10 @@ export class Tamagotchi {
         this.foodLevel--;
     }
 
+    feed() {
+        this.foodLevel += Math.floor((Math.random() * 9+1)); 
+        console.log(`New food level is ${this.foodLevel}`); 
+    }
+
 
 }

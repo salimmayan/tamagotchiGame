@@ -7,6 +7,8 @@ $(document).ready(function() {
   let tamagotchi2 =  new Tamagotchi("Luke");
   console.log(`Inside Main ${tamagotchi2}`);
 
+  tamagotchi2.feed();
+
 
 
 });
