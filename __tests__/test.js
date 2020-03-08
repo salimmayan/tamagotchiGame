@@ -48,7 +48,7 @@ describe('test', () => {
 		let currentFoodLevel = tamagotchi.foodLevel;
 		tamagotchi.die();
 		jest.advanceTimersByTime(9001);
-		expect(tamagotchi.foodLevel).toEqual(currentFoodLevel);
+		expect(tamagotchi.foodLevel).toEqual(currentFoodLevel); 
 	});
 
 
