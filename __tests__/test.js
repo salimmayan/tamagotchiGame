@@ -42,5 +42,14 @@ describe('test', () => {
 		expect(tamagotchi.foodLevel).toBeGreaterThan(30);
 	});
 
+	test('should correctly call Tamagotchi.die Property', () => {
+
+		let tamagotchi = new Tamagotchi("Austin");
+		let curretnFoodLevel = tamagotchi.foodLevel;
+		tamagotchi.die();
+		jest.advanceTimersByTime(9001);
+		expect(tamagotchi.foodLevel).toEqual(curretnFoodLevel);
+	});
+
 
 });
